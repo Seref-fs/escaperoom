@@ -1,0 +1,600 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.top-box {
+    background-color: #011827;
+    padding: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 128px;
+    height: 82px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-top h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    transform: translateY(10px);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+}
+nav a {
+    color:white;
+    text-decoration: none;
+    font-size: 24px;
+}
+nav a.active {
+    color: #8ACFE5;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin-top: 0;
+}
+
+.hero-buttons {
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -25px;
+}
+
+.btn {
+    border: 5px solid;
+    padding:10px 50px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif; 
+    text-align: center;
+}
+
+.btn-red {
+    color: white;
+    border-color: #E3170A;
+    background-color: #E3170A;
+    
+}
+.btn-blue {
+    color: black;
+    border-color:#8ACFE5;
+    background-color: #8ACFE5;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.review {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    flex: 1;
+    min-width: 0;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.review p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; 
+    font-style: italic;
+    font-size: clamp(16px, 1.5vw, 20px);
+    line-height: 1.5;
+    margin-top: 0;
+    overflow-wrap: break-word;
+}
+.review small {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+main > h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.rooms {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.room-card {
+    background-color: #fff;
+    border: 1px solid #B6BDB5;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(80, 80, 80, 0.50);
+    overflow: hidden;
+}
+
+.room-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.room-content {
+    padding: 20px;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 15px;
+}
+
+.stars img {
+    width: 18px;
+    height: 18px;
+}
+
+.participants {
+    margin-left: auto;
+    font-size: 12px;
+}
+
+.book-btn {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    padding: 10px 16px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.challenge-options {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 50px auto;
+}
+.challenge-btn {
+    display: inline-block;
+    padding: 2px 50px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.online-btn {
+    background: #E3170A;
+    color: white;
+    text-decoration: none;
+    border: 20px solid #E3170A;
+}
+.onsite-btn {
+    background-color: #8ACFE5;
+    color: black;
+    text-decoration: none;
+    border: 20px solid #8ACFE5;
+
+}
+
+.blue-banner {
+    width: 100%;
+    min-height: 500px;
+    background-color: rgba(1, 24, 39, 1);
+    color: white;
+    padding: 120px 80px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-content {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.blue-banner p {
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+.banner-btn {
+    display: inline-block;
+    background-color: #011827;
+    color: #8ACFE5;
+    padding: 20px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid #8ACFE5;
+
+}
+
+.bookonsite,
+.allchall {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin: 50px 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bookonsite {
+    flex-direction: row;
+}
+
+.allchall {
+    flex-direction: row-reverse;
+}
+
+.bookonsite > img,
+.allchall > img {
+    display: block;
+    width: 50%;
+    height: auto;
+    flex-shrink: 0;
+    transform: translateY(-50px);
+}
+.allchall > img {
+    transform: translateY(-100px);
+}
+
+.articlecontent,
+.allchallengescontent {
+    flex: 1;
+    min-width: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.articlecontent h2,
+.allchallengescontent h2 {
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-left: 100px;
+    transform: translateY(-50px);
+}
+
+.articlecontent p,
+.allchallengescontent p {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-left: 100px;
+    transform: translateY(-50px);
+}
+
+.bookonsite-btn,
+.allchallenges-btn {
+    display: inline-block;
+    background-color: #E3170A;
+    color: white;
+    padding: 25px 70px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 100px;
+    transform: translateY(-50px);
+}
+
+.site-footer {
+    width: 100%;
+    background-color: #011827;
+    color: white;
+    padding: 50px 60px;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.footer-into {
+    flex: 1;
+    min-width: 0;
+}
+
+.footer-into h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    margin: 0 0 20px;
+}
+
+.footer-into p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+.footer-links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 70px;
+    flex-shrink: 0;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.footer-column h3 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+
+.footer-column a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+
+
+
+/* MOBIL */
+
+@media (max-width: 768px) {
+    .top-box {
+        padding: 20px 16px;
+    }
+
+    .header-top {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 90px;
+        height: auto;
+    }
+
+    .header-top h1 {
+        font-size: clamp(24px, 5vw, 32px);
+    }
+
+    nav {
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        height: 280px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 20px;
+        padding: 0 16px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 12px 16px;
+    }
+
+    .reviews {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .review {
+        margin-top: 10px;
+        padding: 12px;
+    }
+
+    .review p {
+        font-size: 16px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .rooms {
+        display: grid;
+        grid-auto-flow:column;
+        grid-auto-columns: 100%;
+        grid-template-columns: unset;
+        gap: 20px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .blue-banner {
+        padding: 35px 20px;
+    }
+    .banner-btn {
+        padding: 12px 25px;
+    }
+
+      .bookonsite,
+    .allchall {
+        gap: 20px;
+        flex-direction: column;
+        margin: 30px 0;
+    }
+
+    .bookonsite > img,
+    .allchall > img {
+        width: 100%;
+        max-width: 100%;
+        transform: none;
+    }
+
+    .allchall > img {
+        transform: none;
+    }
+
+    .articlecontent,
+    .allchallengescontent {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .articlecontent h2,
+    .allchallengescontent h2 {
+        font-size: 26px;
+        margin-left: 0;
+        transform: none;
+    }
+
+    .articlecontent p,
+    .allchallengescontent p {
+        font-size: 16px;
+        margin-left: 0;
+        transform: none;
+    }
+
+    .bookonsite-btn,
+    .allchallenges-btn {
+        margin-left: 0;
+        padding: 14px 20px;
+        transform: none;
+    }
+    .challenge-options {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0 16px;
+    }
+
+    .challenge-btn {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px 16px;
+    border-width: 5px;
+    }
+      .site-footer {
+        padding: 35px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+    }
+
+    .footer-into {
+        width: 100%;
+    }
+
+    .footer-into h2 {
+        font-size: 23px;
+    }
+
+    .footer-into p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 35px;
+        width: 100%;
+    }
+
+    .footer-column {
+        min-width: 120px;
+        gap: 12px;
+    }
+
+    .footer-column h3 {
+        font-size: 17px;
+    }
+
+    .footer-column a {
+        font-size: 15px;
+    }
+}
